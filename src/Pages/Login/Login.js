@@ -4,6 +4,8 @@ import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import SocialLogin from './SocialLogin/SocialLogin';
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
 
@@ -47,8 +49,14 @@ navigate('/signUp')
     );
     const resetPassword=async()=>{
       const email=emailRef.current.value;
+
+     if(email){
       await sendPasswordResetEmail(email)
-      alert('sent email')
+      toast('sent email')
+     }
+     else{
+       toast('Please Enter your email address')
+     }
     }
 
     return (
@@ -73,9 +81,10 @@ navigate('/signUp')
 {errorElement}
 <p className='fw-bold'>Are You new to Greenorganic? <Link to="/signUp" className='text-danger pe-auto text-decoration-none ' onClick={navigateSignUp} >Please signUp</Link></p>
 
-<p className='fw-bold'>Forget Password?<Link to="/signUp" className='text-danger pe-auto text-decoration-none ' onClick={resetPassword} >Reset Password</Link></p>
+<p className='fw-bold'>Forget Password?<button to="/signUp" className='btn btn-link text-danger pe-auto text-decoration-none ' onClick={resetPassword} >Reset Password</button></p>
 
 <SocialLogin></SocialLogin>
+<ToastContainer/>
 
         </div>
     );
