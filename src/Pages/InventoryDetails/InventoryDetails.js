@@ -6,7 +6,7 @@ const InventoryDetails = () => {
     return (
         <div>
             <h2>Inventory Details</h2>
-            <button className='btn btn-primary'>Deliver</button>
+            <button className='btn btn-primary rounded'>Deliver</button>
         </div>
     );
 };
