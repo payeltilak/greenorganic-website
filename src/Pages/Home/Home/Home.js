@@ -1,11 +1,13 @@
 import React from 'react';
 import { Card, CardGroup } from 'react-bootstrap';
 import Banner from '../../Banner/Banner';
+import Inventories from '../../Inventories/Inventories';
 
 const Home = () => {
     return (
         <div>
            <Banner></Banner>
+           <Inventories></Inventories>
 
       <div>
     <h2 className='fw-bold p-4'>Top Favourite Fruit Juice</h2>

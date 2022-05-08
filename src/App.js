@@ -7,13 +7,13 @@ import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login';
 import SignUp from './Pages/SignUp/SignUp';
 import Blogs from './Pages/Blogs/Blogs';
-import Details from './Pages/Inventory/Inventory';
-import InventoryItems from './Pages/InventoryItems/InventoryItems';
+
 import LogOut from './Pages/LogOut/Logout';
 
 import NotFound from './Pages/NotFound/NotFound';
-import Inventory from './Pages/Inventory/Inventory';
-import RequireAuth from './Pages/RequireAuth/RequireAuth';
+import InventoryDetails from './Pages/InventoryDetails/InventoryDetails';
+
+
 
 function App() {
   return (
@@ -22,15 +22,12 @@ function App() {
       <Routes>
 <Route path='/' element={<Home></Home>} ></Route>
 <Route path='/home' element={<Home></Home>}></Route>
+<Route path='/inventory/:inventoryId' element={<InventoryDetails></InventoryDetails>} ></Route>
 <Route path='/login' element={<Login></Login>}></Route>
 <Route path='/signup' element={<SignUp></SignUp>}></Route>
 <Route path='/blogs' element={<Blogs></Blogs>}></Route>
-<Route path='/inventory' element={
-  <RequireAuth>
-    <Inventory></Inventory>
-    </RequireAuth>
-}></Route>
-<Route path='/inventory' element={<InventoryItems></InventoryItems>}></Route>
+
+
 <Route path='/logout' element={<LogOut></LogOut>}></Route>
 
 <Route path='/*' element={<NotFound></NotFound>}></Route>
