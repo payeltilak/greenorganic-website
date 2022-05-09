@@ -3,44 +3,44 @@
         
         "name": "Apple",
         "img": "https://i.ibb.co/x5ztJTB/apple.jpg",
-        "price": "4000",
-        "Quantity":"20 kg",
-        "Supplier-Name":"Organic foods",
-        "Description": "An apple is an edible fruit produced by an apple tree. Apple trees are cultivated worldwide and are the most widely grown species in the genus Malus. The tree originated in Central Asia, where its wild ancestor, Malus sieversii, is still found today.."
+        "price": 4000,
+        "quantity":20,
+        "Supplier":"Organic foods",
+        "Description": "An apple is an edible fruit produced by an apple tree. Apple trees are cultivated worldwide and are the most widely grown species in the genus Malus. ."
     },
     {
        
         "name": "Mango",
         "img": "https://i.ibb.co/mGm8rxG/Mango.jpg",
-        "price": "5000",
-        "Quantity":"25 kg",
-        "Supplier-Name":"Greenbee",
+        "price": 4000,
+        "quantity":25,
+        "Supplier":"Greenbee",
         "Description": "A mango is an edible stone fruit produced by the tropical tree Mangifera indica which is believed to have originated from the region between northwestern Myanmar, Bangladesh, and northeastern India."
     },
     {
        
         "name": "Banana",
         "img": "https://i.ibb.co/bb6scKb/banana.jpg",
-        "price": "3000",
-        "Quantity":"15 kg",
+        "price": 3000,
+        "quantity":15,
         "Supplier":"Organza",
-        "Description": "Banana is the most popular fresh fruit in all over the world and its name comes from the Arabic word 'banan', which means finger. The scientific name of Banana is Musa acuminata and Musa balbisiana. But the old scientific names of banana are Musa sapientum and Musa paradisiacal. It is not used longer. Bananas are rich source carbohydrates and potassium."
+        "Description": "Banana is the most popular fresh fruit in all over the world and its name comes from the Arabic word 'banan', which means finger. The scientific name of Banana is Musa acuminata and Musa balbisiana."
     },
     {
        
         "name": "Watermelon",
         "img": "https://i.ibb.co/HXSH59N/fruit-7.jpg",
-        "price": "17000",
-        "Quantity":"10 kg",
+        "price": 17000,
+        "quantity":10,
         "Supplier":"Mangifira",
-        "Description": "The cheery red color comes from lycopene, an antioxidant. Studies show it may help curb your risk of cancer and diabetes as part of a healthy lifestyle. Watermelon has more of this nutrient than any other fruit or veggie -- even tomatoes. To load up on lycopene, choose a melon with bright red flesh rather than yellow or orange. And the riper, the better. Also, seedless melon tends to have more lycopene than those with seeds."
+        "Description": "The cheery red color comes from lycopene, an antioxidant. Studies show it may help curb your risk of cancer and diabetes as part of a healthy lifestyle. Watermelon has more of this nutrient than any other fruit or veggie -- even tomatoes. "
     },
     {
-     
+        
         "name": "Papaya",
         "img": "https://i.ibb.co/DVY5FML/papaya.jpg",
-        "price": "20000",
-        "Quantity":" 25 kg",
+        "price": 20000,
+        "quantity": 25,
         "Supplier":"Organicial Foodie",
         "Description": "Papayas grow in tropical climates and are also known as papaws or pawpaws. Their sweet taste, vibrant color, and the wide variety of health benefits they provide make them a popular fruit.."
     },
@@ -48,26 +48,26 @@
        
         "name": "Tomato",
         "img": "https://i.ibb.co/L0wtG8z/Toamto.jpg",
-        "price": "3500",
-        "Quantity":"10 kg",
+        "price": 3500,
+        "quantity":10,
         "Supplier":"Pure Veg",
-        "Description": "Tomatoes are botanically defined as fruits because they form from a flower and contain seeds. Still, they're most often utilized like a vegetable in cooking. In fact, the US Supreme Court ruled in 1893 that the tomato should be classified as a vegetable on the basis of its culinary applications.."
+        "Description": "Tomatoes are botanically defined as fruits because they form from a flower and contain seeds. Still, they're most often utilized like a vegetable in cooking.."
     },
     {
         
         "name": "Potato",
         "img": "https://i.ibb.co/S5KfgQD/potato.jpg",
-        "price": "8000",
-        "Quantity":"40 kg",
+        "price": 8000,
+        "quantity":40,
         "Supplier":"Garlic Food",
-        "Description": "The potato is a starchy tuber of the plant Solanum tuberosum and is a root vegetable native to the Americas. The plant is a perennial in the nightshade family Solanaceae. Wild potato species can be found from the southern United States to southern Chile."
+        "Description": "The potato is a starchy tuber of the plant Solanum tuberosum and is a root vegetable native to the Americas. The plant is a perennial in the nightshade family Solanaceae. "
     },
     {
         
         "name": "Carrot",
         "img": "https://i.ibb.co/fNrF1GS/carrotjpg.jpg",
-        "price": "5000",
-        "Quantity":"23 kg",
+        "price": 5000,
+        "quantity":23,
         "Supplier":"Organic foods",
         "Description": "The carrot is a root vegetable, typically orange in color, though purple, black, red, white, and yellow cultivars exist, all of which are domesticated forms of the wild carrot, Daucus carota, native to Europe and Southwestern Asia.."
     },
@@ -75,8 +75,8 @@
     
         "name": "Onion",
         "img": "https://i.ibb.co/Hts9J9s/onion.jpg",
-        "price": "12000",
-        "Quantity":"40 kg",
+        "price": 12000,
+        "quantity":40,
         "Supplier":"Union pure food",
         "Description": "The onion, also known as the bulb onion or common onion, is a vegetable that is the most widely cultivated species of the genus Allium. The shallot is a botanical variety of the onion which was classified as a separate species until 2010. Its close relatives include garlic, scallion, leek, and chive."
     }
