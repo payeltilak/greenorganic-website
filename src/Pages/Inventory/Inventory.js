@@ -11,7 +11,7 @@ const Inventory = ({ inventory, deleteButton }) => {
     const handleDelete = id => {
         const proceed = window.confirm('Are You Sure?')
         if (proceed) {
-            const url = `http://localhost:5000/inventories/${id}`;
+            const url = `https://afternoon-headland-77959.herokuapp.com/inventories/${id}`;
             fetch(url, {
                 method:'DELETE'
             })
@@ -45,17 +45,17 @@ const Inventory = ({ inventory, deleteButton }) => {
                     <h5>{Supplier}</h5>
                     <p>{Description}</p>
                     
-                    <Button as={Link} to={`/inventory/${_id}`} className="w-75 d-block mx-auto" variant="primary">Update</Button> <br />
+                    <Button as={Link} to={`/inventory/${_id}`} className="w-75 d-block mx-auto" variant="dark">Update</Button> <br />
                 
                     
 
                     <div className='d-flex justify-content-around'>
-                        <Button onClick={navigateToAddItem} variant="primary">Add to item</Button>
+                        <Button onClick={navigateToAddItem} variant="dark">Add to item</Button>
 
                         {
 
                             button &&
-                            <Button variant="primary" onClick={()=>handleDelete(inventory._id)}>Delete</Button>
+                            <Button variant="dark" onClick={()=>handleDelete(inventory._id)}>Delete</Button>
                         }
                     </div>
                 </Card.Body>

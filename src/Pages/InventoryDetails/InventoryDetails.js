@@ -13,7 +13,7 @@ const InventoryDetails = () => {
         let newQuantity = quantity + stockValue;
         const newInventory = { ...inventory, quantity: newQuantity }
         setInventory(newInventory)
-        fetch(`http://localhost:5000/update-inventories/${inventoryId}`,
+        fetch(`https://afternoon-headland-77959.herokuapp.com/update-inventories/${inventoryId}`,
             {
                 method: 'PUT',
                 headers: {
@@ -27,7 +27,7 @@ const InventoryDetails = () => {
         let newQuantity = quantity - 1;
         const newInventory = { ...inventory, quantity: newQuantity }
         setInventory(newInventory)
-        fetch(`http://localhost:5000/update-inventories/${inventoryId}`,
+        fetch(`https://afternoon-headland-77959.herokuapp.com/update-inventories/${inventoryId}`,
             {
             method: 'PUT',
             headers: {
@@ -39,7 +39,7 @@ const InventoryDetails = () => {
     }
 
 useEffect(() => {
-        const url = `http://localhost:5000/inventories/${inventoryId}`
+        const url = `https://afternoon-headland-77959.herokuapp.com/inventories/${inventoryId}`
         fetch(url)
             .then(res => res.json())
             .then(data => setInventory(data))
@@ -60,10 +60,10 @@ useEffect(() => {
                 </Card.Body>
 
 
-                <button onClick={handleDeliver} className='btn btn-primary w-25 m-2'>Deliver</button>
+                <button onClick={handleDeliver} className='btn btn-dark w-25 m-2 mx-auto'>Deliver</button>
                 <form onSubmit={handleStock}>
                     <input type="number" name="addStock" id="" placeholder='Add To Stock' />
-                    <input type="submit" className='btn btn-primary w-25 m-2' value="Restock" />
+                    <input type="submit" className='btn btn-dark w-25 m-2' value="Restock" />
                 </form>
 
 
