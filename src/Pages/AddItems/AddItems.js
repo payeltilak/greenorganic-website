@@ -1,7 +1,11 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
 
+
+
 const AddItems = () => {
+    
+    
     const { register, handleSubmit } = useForm();
     const onSubmit = data => 
     {
@@ -24,7 +28,7 @@ const AddItems = () => {
             <h2>Add  product</h2>
         <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
         <input className='mb-2' placeholder='email' type="text" {...register("email")} />
-      <input className='mb-2' placeholder='Name' {...register("name", { required: true, maxLength: 20 })} />
+      <input className='mb-2' placeholder='Name' {...register("user.displayName", { required: true, maxLength: 20 })} />
 
       <input className='mb-2' placeholder='Photo URl' type="text" {...register("img")} />
       <input className='mb-2' placeholder='price' type="number" {...register("price")} />
