@@ -45,7 +45,7 @@ const Inventory = ({ inventory, deleteButton }) => {
                     <h5>{Supplier}</h5>
                     <p>{Description}</p>
                     
-                    <Button as={Link} to={`/inventory/${_id}`} className="w-75 d-block mx-auto" variant="dark">Update</Button> <br />
+                    <Button as={Link} to={`/updateItem/${_id}`} className="w-75 d-block mx-auto" variant="dark">Update</Button> <br />
                 
                     
 

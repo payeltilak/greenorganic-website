@@ -13,8 +13,8 @@ const ManageInventory = () => {
             .then(data => setInventories(data))
     }, [inventories])
 
-    const handleUpdate = () => {
-    navigate('/updateItem')
+    const handleUpdate = (id) => {
+        navigate(`/updateItem/${id}`)
     }
     const handleAddItem = () => {
         navigate('/addItem')
