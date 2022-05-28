@@ -1,6 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
+
 import { useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
+
+
 
 const UpdateItem = () => {
     const {id}=useParams()
@@ -53,14 +56,21 @@ const UpdateItem = () => {
 
     }
     return (
-        <div>
-            <img src={item?.img} alt="" />
-            <p>Quantity: {item?.quantity}</p>
-            <button onClick={()=>handleDelivered(item?._id)} className='btn btn-success'>Delivered</button>
-            <form onSubmit={addQuantity}>
-                <input type="number" ref={quantityRef}/>
-                <input type="submit" value="Update Product" />
-            </form>
+        <div className='row container mx-auto'>
+            <div className='col-6 pt-5 '>
+                <img className='w-50' src={item?.img} alt="" />
+            </div>
+
+            <div className='mr-5 col-6 pt-5'>
+                <h3 className='fw-bold'>Quantity: {item?.quantity}</h3>
+                <button onClick={() => handleDelivered(item?._id)} className='btn btn-success m-3'>Delivered</button>
+                <form onSubmit={addQuantity}>
+                    <input type="number" ref={quantityRef} /> <br/>
+                    <input className='m-2' type="submit" value="Update Product" />
+                </form>
+            </div>
+
+            
         </div>
     );
 };

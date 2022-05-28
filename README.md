@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 
 # Project Name : Greenorganic
-##  Livesite Link : [Greenorganic](https://electronics-wirehouse-client.web.app/ "livesite")
+##  Livesite Link : [Greenorganic](https://greenorganic-fruits-vegitable.web.app/ "livesite")
 
 ##  Description
 ### At first  create client side and Server side.My projects is about Grenorganic Wirehouse management system.all products display in manage inventory page.We cann add all of the product in fruit and vegitables wirehouse from supplier..when any of the products deliverd,the quantity of products decrease.
