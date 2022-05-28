@@ -8,7 +8,7 @@ const UpdateItem = () => {
     const quantityRef=useRef('')
     
     useEffect(() => {
-        const url = `http://localhost:5000/inventories/${id}`
+        const url = `https://afternoon-headland-77959.herokuapp.com/inventories/${id}`
         fetch(url)
         .then(res=>res.json())
         .then(data=>setItem(data))
@@ -18,7 +18,7 @@ const UpdateItem = () => {
         const itemQuantity=item.quantity
         const updateQuantity = itemQuantity - 1
         const quantity={...item ,quantity:updateQuantity}
-        const url =`http://localhost:5000/update-inventories/${id}`
+        const url =`https://afternoon-headland-77959.herokuapp.com/update-inventories/${id}`
         fetch(url, {
             method: "PUT",
             headers: {
@@ -37,7 +37,7 @@ const UpdateItem = () => {
         const itemQuantity = item.quantity
         const updateQuantity=newQuantity+itemQuantity
         const quantity = { ...item, quantity: updateQuantity }
-        const url =`http://localhost:5000/update-inventories/${item._id}`
+        const url =`https://afternoon-headland-77959.herokuapp.com/update-inventories/${item._id}`
         fetch(url, {
             method: "PUT",
             headers: {

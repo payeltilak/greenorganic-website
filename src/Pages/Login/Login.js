@@ -24,10 +24,29 @@ const location=useLocation();
       const from =location.state?.from.pathname || '/';
       let errorElement;
 
+  if (user) {
 
-      if(user){
-        navigate(from,{replace:true});
-    }
+    const url = 'https://afternoon-headland-77959.herokuapp.com/login'
+
+    fetch(url, {
+      method: 'POST',
+      body: JSON.stringify({
+        email: user.user.email
+      }),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        localStorage.setItem('accessToken', data.accessToken)
+        navigate(from, { replace: true });
+      });
+
+
+
+    toast.success('Login successful', { id: 'sajid' })
+  }
     if (error) {
       errorElement= <div>
           <p className='text-danger'>Error: {error?.message}</p>

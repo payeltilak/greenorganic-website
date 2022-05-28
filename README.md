@@ -1,15 +1,26 @@
 # Getting Started with Create React App
 
-# Project: Greenorganic [https://greenorganic-fruits-vegitable.web.app/](https://greenorganic-fruits-vegitable.web.app/).
+# Project Name : Greenorganic
+##  Livesite Link : [Greenorganic](https://electronics-wirehouse-client.web.app/ "livesite")
 
-* first of all i open an react app of client side code.
+##  Description
+### At first  create client side and Server side.My projects is about Grenorganic Wirehouse management system.all products display in manage inventory page.We cann add all of the product in fruit and vegitables wirehouse from supplier..when any of the products deliverd,the quantity of products decrease.
 
-* then i install firebase react dom. On browser i open firebase app.
-* My website name is greenorganic which has fruits ang vegetable information..
+## Feature of management
 
-* Then I collected image and show all information of requirements on my project.
+* uses react router.
+* using react bootstrap.  
+* using firebase.  
+* using react hook form.  
+* Maintain folder structure.
+* connecting server side with client side
+* connecting server with mongodb.
 
-* server side  opened and connected to mongodb and intall mongodb.
+
+
+* data will be inserted in mongodb when we add product from client side
+
+
 
 
 

@@ -4,6 +4,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import Banner from '../../Banner/Banner';
 import Inventories from '../../Inventories/Inventories';
+import ManageButton from '../../ManageInventory/ManageButton';
 
 const Home = () => {
   const [user] = useAuthState(auth)
@@ -14,7 +15,7 @@ const Home = () => {
       <Inventories></Inventories>
 
       <div>
-        <h2 className='fw-bold p-4'>Top Favourite Fruit Juice</h2>
+        <h2 className='fw-bold p-4 text-center'>Top Favourite Fruit Juice</h2>
       </div>
 
       <CardGroup className='container'>
@@ -43,15 +44,20 @@ const Home = () => {
 
         </Card>
       </CardGroup>
-      <div className='container mx-auto p-4'>
-        <h1>Vegitables</h1>
+      <div className='container mx-auto p-4 '>
+        <h1 className='text-center'>Vegitables</h1>
+        <div className='d-flex'>
+          <div>
 
-        <img className='w-50' src="https://i.ibb.co/xjMdxyt/vegetable-1.jpg" alt="" />
+            <img className='container mr-5' src="https://i.ibb.co/xjMdxyt/vegetable-1.jpg" alt="" />
 
-        <div className=' fw-bold ml-2 p-2'>
-          Vegetables are parts of plants that are consumed by humans or other animals as food. The original meaning is still commonly used and is applied to plants collectively to refer to all edible plant matter, including the flowers, fruits, stems, leaves, roots, and seeds. An alternative definition of the term is applied somewhat arbitrarily, often by culinary and cultural tradition. It may exclude foods derived from some plants that are fruits, flowers, nuts, and cereal grains, but include savoury fruits such as tomatoes and courgettes, flowers such as broccoli, and seeds such as pulses.
+          </div>
+          <div className=' fw-bold ml-2 p-2'>
+            Vegetables are parts of plants that are consumed by humans or other animals as food. The original meaning is still commonly used and is applied to plants collectively to refer to all edible plant matter, including the flowers, fruits, stems, leaves, roots, and seeds. An alternative definition of the term is applied somewhat arbitrarily, often by culinary and cultural tradition. It may exclude foods derived from some plants that are fruits, flowers, nuts, and cereal grains, but include savoury fruits such as tomatoes and courgettes, flowers such as broccoli, and seeds such as pulses.
+          </div>
         </div>
       </div>
+      <ManageButton></ManageButton>
     </div>
   );
 };

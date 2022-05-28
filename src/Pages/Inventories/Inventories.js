@@ -10,13 +10,12 @@ const Inventories = () => {
     },[])
     return (
         <div className='container'>
-            <h2 className='p-5'>Inventories</h2>
+            <h2 className='p-5 text-center'>Inventories</h2>
            <div className='row'>
            {
                 inventories.slice(0,6).map(inventory =><Inventory
                 key={inventory._id}
                     inventory={inventory}
-                    deleteButton={false}  
                 ></Inventory>)
 
             }
