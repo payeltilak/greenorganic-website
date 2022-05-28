@@ -11,7 +11,7 @@ const ManageInventory = () => {
         fetch('http://localhost:5000/inventories')
             .then(res => res.json())
             .then(data => setInventories(data))
-    }, [])
+    }, [inventories])
 
     const handleUpdate = () => {
     navigate('/updateItem')
@@ -19,7 +19,19 @@ const ManageInventory = () => {
     const handleAddItem = () => {
         navigate('/addItem')
     }
-
+    const handleDelete = (id) => {
+        const confirm=window.confirm("Are you sure?")
+        if (confirm) {
+            const url = `http://localhost:5000/inventories/${id}`
+            fetch(url, {
+                method: "DELETE",
+            })
+                .then(res => res.json())
+                .then(data => {
+                    console.log("Item deleted");
+                })
+       }
+    }
     return (
         <div className='container'>
             <div className='d-flex justify-content-end align-items-center'>
@@ -46,13 +58,9 @@ const ManageInventory = () => {
                             <td>{item.Supplier}</td>
                             <td>{item.Description}</td>
                             <td> <button onClick={()=>handleUpdate(item._id)} className='btn btn-primary'>Update</button>  </td>
-                            <td> <button className='btn btn-danger'>Delete</button></td>
-                          
+                            <td> <button onClick={()=>handleDelete(item._id)} className='btn btn-danger'>Delete</button></td>
                             </tr>)
                     }
-                    <tr>
-                        <td>1</td>
-                    </tr>
                 </tbody>
             </Table>
         </div>
