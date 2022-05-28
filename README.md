@@ -1,6 +1,18 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project: Greenorganic [https://greenorganic-fruits-vegitable.web.app/](https://greenorganic-fruits-vegitable.web.app/).
+
+* first of all i open an react app of client side code.
+
+* then i install firebase react dom. On browser i open firebase app.
+* My website name is greenorganic which has fruits ang vegetable information..
+
+* Then I collected image and show all information of requirements on my project.
+
+* server side  opened and connected to mongodb and intall mongodb.
+
+
+
 
 ## Available Scripts
 

@@ -40,8 +40,8 @@ const location=useLocation();
 
       signInWithEmailAndPassword(email,password);
     }
-    const navigateSignUp=event=>{
-navigate('/signUp')
+    const navigateSignUp=()=>{
+    navigate('/signUp')
     }
 
     const [sendPasswordResetEmail] = useSendPasswordResetEmail(

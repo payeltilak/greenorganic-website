@@ -11,7 +11,6 @@ import Blogs from './Pages/Blogs/Blogs';
 // import LogOut from './Pages/LogOut/Logout';
 
 import NotFound from './Pages/NotFound/NotFound';
-import InventoryDetails from './Pages/InventoryDetails/InventoryDetails';
 import MyItem from './Pages/MyItem/MyItem';
 import AddItems from './Pages/AddItems/AddItems';
 import ManageInventory from './Pages/ManageInventory/ManageInventory';
@@ -19,39 +18,37 @@ import ManageInventory from './Pages/ManageInventory/ManageInventory';
 import RequireAuth from './Pages/RequireAuth/RequireAuth';
 
 import About from './Pages/About/About';
-
-
+import UpdateItem from './Pages/UpdateItem/UpdateItem';
 
 
 
 function App() {
   return (
-    <div className="App">
+    <div >
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>} ></Route>
         <Route path='/home' element={<Home></Home>}></Route>
-        <Route path='/inventory/:inventoryId' element={<InventoryDetails></InventoryDetails>} ></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/about' element={<About></About>}></Route>
        
-        {/* <Route path='/logout' element={<LogOut></LogOut>}></Route> */}
-        {/* <Route path='/checkProduct' element={<RequireAuth>
-            <CheckProducts></CheckProducts>
-        </RequireAuth>}></Route> */}
-
         <Route path='/addItem' element={
           <RequireAuth>
             <AddItems></AddItems>
           </RequireAuth>
         }></Route>
+        <Route path='/updateItem' element={
+          <RequireAuth>
+            <UpdateItem></UpdateItem>
+          </RequireAuth>
+        }></Route>
 
         <Route path='/manageInventory' element={
-          // <RequireAuth>
+          <RequireAuth>
            <ManageInventory></ManageInventory>
-          // </RequireAuth>
+          </RequireAuth>
         }></Route>
 
         <Route path='/myitem' element={
