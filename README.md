@@ -4,7 +4,7 @@
 ##  Livesite Link : [Greenorganic](https://greenorganic-fruits-vegitable.web.app/ "livesite")
 
 ##  Description
-### At first  create client side and Server side.My projects is about Grenorganic Wirehouse management system.all products display in manage inventory page.We cann add all of the product in fruit and vegitables wirehouse from supplier..when any of the products deliverd,the quantity of products decrease.
+### At first  create client side and Server side.My projects is about Grenorganic Wirehouse management system.all products display in manage inventory page.We can add all of the product in fruit and vegitables wirehouse from supplier..when any of the products delivered,the quantity of products decrease.
 
 ## Feature of management
 
@@ -13,7 +13,7 @@
 * using firebase.  
 * using react hook form.  
 * Maintain folder structure.
-* connecting server side with client side
+* connecting server side with client side.
 * connecting server with mongodb.
 
 
